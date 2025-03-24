@@ -28,15 +28,6 @@ scikit-learn (for model training)
 
 Random Forest Regressor (as the primary machine learning model)
 
-📁 Project Structure
-bash
-Copy
-Edit
-├── app.py                   # Streamlit web application
-├── calories.csv             # Calories burned dataset
-├── exercise.csv             # Exercise data with physiological measurements
-├── fitness_tracker.ipynb    # Jupyter Notebook with EDA and model development
-└── README.md                # Project documentation (this file)
 ⚙️ How It Works
 User inputs data via the Streamlit sidebar.
 
@@ -51,3 +42,16 @@ The predicted kilocalories burned.
 Similar cases from the dataset.
 
 Comparative insights (e.g., how your heart rate compares to others).
+
+Model Overview
+The model uses BMI, Age, Heart Rate, Duration, Body Temperature, and Gender (one-hot encoded) as features.
+
+Random Forest Regressor with:
+
+1000 estimators
+
+max_depth=6
+
+max_features=3
+
+Model trained using an 80/20 train-test split.
