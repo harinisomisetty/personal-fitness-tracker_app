@@ -43,7 +43,8 @@ Similar cases from the dataset.
 
 Comparative insights (e.g., how your heart rate compares to others).
 
-Model Overview
+📈 Model Overview:
+
 The model uses BMI, Age, Heart Rate, Duration, Body Temperature, and Gender (one-hot encoded) as features.
 
 Random Forest Regressor with:
